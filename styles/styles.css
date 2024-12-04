@@ -31,11 +31,6 @@ p
     justify-items: center;
 }
 
-.around
-{
-    display: grid;
-    justify-content: space-around;
-}
 /* Cards */
 
 /* ----------------- Name Card Start ----------------- */
@@ -69,7 +64,6 @@ p
     height: 78px;
 }
 
-/* --------------- Name Card End ---------------- */
 .card-grid
 {
     display: grid;
@@ -88,7 +82,7 @@ p
     background-color: #1C204B;
     border-radius: 15px;
 }
-
+/* --------------- Name Card End ---------------- */
 
 .icon
 {
@@ -101,29 +95,71 @@ p
 {
     background-color: #FF8B64;
     border-radius: 15px;
+    border: #0E1323 solid;
+    border-radius: 15px;
+    height: 10rem;
 }
 
 .play-color
 {
     background-color: #55C2E6;
+    border: #0E1323 solid;
+    border-radius: 15px;
+    height: 10rem; 
 }
 
 .study-color
 {
     background-color: #FF5E7D;
+    border: #0E1323 solid;
+    border-radius: 15px;
+    height: 10rem;
 }
 
 .exercise-color
 {
     background-color: #4BCF82;
+    border: #0E1323 solid;
+    border-radius: 15px;
+    height: 10rem;
 }
 
 .social-color
 {
     background-color: #7335D2;
+    border: #0E1323 solid;
+    border-radius: 15px;
+    height: 10rem;
 }
 
 .self-care-color
 {
     background-color: #F1C75B;
+    border: #0E1323 solid;
+    border-radius: 15px;
+    height: 10rem;
+}
+
+.background-row1
+{
+    border-radius: 15px;
+    height: 10rem; 
+}
+
+.background-row2
+{
+    background-color: #1C204B;
+    border-radius: 15px;
+}
+
+.test-grid
+{
+    display: grid;
+    grid-template-rows: 3.5rem 1fr;
+}
+
+.card-bodytest
+{
+    background-color: #1C204B;
+    border-radius: 15px;
 }
