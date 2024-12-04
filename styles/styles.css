@@ -38,7 +38,7 @@ p
 }
 /* Cards */
 
-/* ----------------- Name Card ----------------- */
+/* ----------------- Name Card Start ----------------- */
 .name-card-grid
 {
     display: grid;
@@ -60,8 +60,7 @@ p
 
 .card-name-tabs
 {
-    background-color: #1C204B;
-    
+    background-color: #1C204B; 
 }
 
 .img-pfp
@@ -70,11 +69,11 @@ p
     height: 78px;
 }
 
-/* --------------- Name Card ---------------- */
+/* --------------- Name Card End ---------------- */
 .card-grid
 {
     display: grid;
-    grid-template-rows: 45px 199px;
+    grid-template-rows: 3.5rem 1fr;
     justify-content: center;
 }
 
@@ -82,7 +81,6 @@ p
 {
     width: 100%;
     border-radius: 15px;
-
 }
 
 .card-body
@@ -102,7 +100,7 @@ p
 .work-color
 {
     background-color: #FF8B64;
-    border: #0E1323;
+    border-radius: 15px;
 }
 
 .play-color
