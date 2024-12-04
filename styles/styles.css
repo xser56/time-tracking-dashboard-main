@@ -1,0 +1,131 @@
+body
+{
+    background-color: #0E1323;
+}
+
+h1
+{
+    color: white;
+    font-size: 56px;
+}
+
+h2
+{
+    font-size: 40px;
+    color: white;
+    font-weight: lighter;
+}
+
+p
+{
+    font-size: 18px;
+    color: #BBC0FF;
+}
+
+.main-grid
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+.around
+{
+    display: grid;
+    justify-content: space-around;
+}
+/* Cards */
+
+/* ----------------- Name Card ----------------- */
+.name-card-grid
+{
+    display: grid;
+    grid-template-rows: 100px 200px;
+
+}
+
+.name-card-span
+{
+    grid-row: span 2;
+}
+
+.card-header
+{
+    background-color: #5747EA;
+    border-radius: 15px;
+    
+}
+
+.card-name-tabs
+{
+    background-color: #1C204B;
+    
+}
+
+.img-pfp
+{
+    width: 78px;
+    height: 78px;
+}
+
+/* --------------- Name Card ---------------- */
+.card-grid
+{
+    display: grid;
+    grid-template-rows: 45px 199px;
+    justify-content: center;
+}
+
+.card
+{
+    width: 100%;
+    border-radius: 15px;
+
+}
+
+.card-body
+{
+    background-color: #1C204B;
+    border-radius: 15px;
+}
+
+
+.icon
+{
+    width: 78px;
+    height: 78px;
+    margin-right: 1rem;
+}
+
+.work-color
+{
+    background-color: #FF8B64;
+    border: #0E1323;
+}
+
+.play-color
+{
+    background-color: #55C2E6;
+}
+
+.study-color
+{
+    background-color: #FF5E7D;
+}
+
+.exercise-color
+{
+    background-color: #4BCF82;
+}
+
+.social-color
+{
+    background-color: #7335D2;
+}
+
+.self-care-color
+{
+    background-color: #F1C75B;
+}
