@@ -16,21 +16,21 @@
      <div class="container main-grid">
        
        <!-- Name Card -->
-       <div class="card name-card-span">
-         <div class="card-body">
-           <img src="./images/image-jeremy.png" class="img-pfp my-3 ms-3" alt="JEREMY">
-           <div class="pt-4 ps-3">
-             <p> Report for </p> 
-              <h2>Jeremy Robson</h2>
-           </div>
-           <br><br>
-               <div class="ps-3">
-                 <p id="daily">Daily</p>
-                 <p id="weekly">Weekly</p>
-                 <p id="monthly">Monthly</p>
-               </div>
-         </div>
-       </div>
+       <div class="container name-card-grid name-card-span name-color">
+        <div class="row background-row1">
+            <img src="./images/image-jeremy.png" class="img-pfp" alt="Jerm">
+            <p class="card-text"> Report for</p>
+            <h2 class="ps-5">Jeremy Robson</h2>
+        </div>
+        <div class="row card-bodytest">
+            <div class="col-9">
+                <p id="daily">Daily</p>
+                <p id="weekly">Weekly</p>
+                <p id="monthly">Monthly</p>
+            </div>
+            
+        </div>
+    </div> 
 
 <!-- 6 Cards -->
  
@@ -45,8 +45,8 @@
          <div class="col p-4">
              <img src="./images/icon-ellipsis.svg" alt="icon">
          </div>
-         <div id="currentTime" class="row ps-4"> <h1>32hrs</h1></div>
-         <div class="row ps-4 pt-2 pb-3"> <p id="previousTime">Last Week - 36hrs</p></div>>        
+         <div class="row ps-4"> <h1 id="workCurrent">Hrs</h1></div>
+         <div class="row ps-4 pt-2 pb-3"> <p id="workPrevious">Last Week - previous</p></div>>        
      </div>
  </div>
 
@@ -132,6 +132,7 @@
 
 </div>
 
+    <script src="./scripts/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>

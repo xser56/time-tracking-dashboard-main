@@ -31,19 +31,40 @@ p
     justify-items: center;
 }
 
+@media screen and (max-width: 1000px)
+{
+    .main-grid
+    {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+    }
+}
 /* Cards */
 
 /* ----------------- Name Card Start ----------------- */
 .name-card-grid
 {
     display: grid;
-    grid-template-rows: 100px 200px;
-
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .name-card-span
 {
     grid-row: span 2;
+}
+
+@media screen and (max-width: 1000px)
+{
+    .name-card-span:nth-child(1)
+    {
+        grid-row: 1;
+    }
+}
+
+.name-color
+{
+    background-color: #5747EA;
+    border-radius: 15px;
 }
 
 .card-header
@@ -53,6 +74,12 @@ p
     
 }
 
+.card-text
+{
+    padding-top: 1rem;
+    padding-left: 3rem;
+}
+
 .card-name-tabs
 {
     background-color: #1C204B; 
@@ -60,8 +87,10 @@ p
 
 .img-pfp
 {
-    width: 78px;
+    width: 6rem;
     height: 78px;
+    margin: 2rem 2rem;
+    padding: white solid ;
 }
 
 .card-grid
@@ -71,17 +100,6 @@ p
     justify-content: center;
 }
 
-.card
-{
-    width: 100%;
-    border-radius: 15px;
-}
-
-.card-body
-{
-    background-color: #1C204B;
-    border-radius: 15px;
-}
 /* --------------- Name Card End ---------------- */
 
 .icon
