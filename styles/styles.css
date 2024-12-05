@@ -28,7 +28,6 @@ p
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 30px;
-    justify-items: center;
 }
 
 @media screen and (max-width: 1000px)
@@ -78,6 +77,8 @@ p
 {
     padding-top: 1rem;
     padding-left: 3rem;
+    font-weight: bold;
+    color: white;
 }
 
 .card-name-tabs
@@ -104,9 +105,9 @@ p
 
 .icon
 {
-    width: 78px;
-    height: 78px;
-    margin-right: 1rem;
+    width: 38%;
+    height: 60%;
+    margin-right: 0.5rem;
 }
 
 .work-color
@@ -180,4 +181,5 @@ p
 {
     background-color: #1C204B;
     border-radius: 15px;
+    padding-top: 1rem;
 }

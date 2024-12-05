@@ -32,7 +32,6 @@ async function getTimes()
     
     console.log(data[0].timeframes.daily.current);
     return data;
-    
 };
 getTimes()
 
@@ -85,6 +84,7 @@ weekly.addEventListener('click', async function (event)
 monthly.addEventListener('click', async function (event)
 {
     const data = await getTimes();
+
     workCurrent.innerText = `${data[0].timeframes.monthly.current} hrs`;
     workPrevious.innerText = `Last Week - ${data[0].timeframes.monthly.previous} hrs`;
 
