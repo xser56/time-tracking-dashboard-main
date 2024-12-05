@@ -7,19 +7,23 @@ h1
 {
     color: white;
     font-size: 56px;
+    font-family: Rubik;
+    font-weight: 300;
 }
 
 h2
 {
     font-size: 40px;
     color: white;
-    font-weight: lighter;
+    font-weight: 300;
+    font-family: Rubik;
 }
 
 p
 {
     font-size: 18px;
     color: #BBC0FF;
+    font-family: Rubik;
 }
 
 .main-grid
@@ -28,6 +32,7 @@ p
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 30px;
+    /* background-color: #0E1323;  */
 }
 
 @media screen and (max-width: 1000px)
@@ -52,6 +57,7 @@ p
     grid-row: span 2;
 }
 
+
 @media screen and (max-width: 1000px)
 {
     .name-card-span:nth-child(1)
@@ -60,17 +66,24 @@ p
     }
 }
 
-.name-color
+.name-tabs
 {
-    background-color: #5747EA;
+    background-color: #1C204B;
     border-radius: 15px;
+    padding-top: 3rem;
+    margin-top: 5.5rem;
 }
 
-.card-header
+.name-tabs:hover
+{
+    color: white;
+}
+
+.name-card-grid
 {
     background-color: #5747EA;
     border-radius: 15px;
-    
+    padding-top: 1rem;
 }
 
 .card-text
@@ -81,17 +94,11 @@ p
     color: white;
 }
 
-.card-name-tabs
-{
-    background-color: #1C204B; 
-}
-
 .img-pfp
 {
-    width: 6rem;
+    width: 6.5rem;
     height: 78px;
-    margin: 2rem 2rem;
-    padding: white solid ;
+    margin: 2rem 1rem;
 }
 
 .card-grid
@@ -99,6 +106,13 @@ p
     display: grid;
     grid-template-rows: 3.5rem 1fr;
     justify-content: center;
+}
+
+.name-card-text
+{
+    font-size: 15px;
+    font-family: Rubik;
+    padding-left: 2rem;
 }
 
 /* --------------- Name Card End ---------------- */
@@ -157,18 +171,6 @@ p
     border: #0E1323 solid;
     border-radius: 15px;
     height: 10rem;
-}
-
-.background-row1
-{
-    border-radius: 15px;
-    height: 10rem; 
-}
-
-.background-row2
-{
-    background-color: #1C204B;
-    border-radius: 15px;
 }
 
 .test-grid
