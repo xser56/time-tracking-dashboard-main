@@ -26,13 +26,20 @@ p
     font-family: Rubik;
 }
 
+.smText
+{
+    font-size: 15px;
+    color: #BBC0FF;
+    padding: 2rem;
+}
+
 .main-grid
 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 30px;
-    /* background-color: #0E1323;  */
+    justify-content: center;
 }
 
 @media screen and (max-width: 1000px)
@@ -57,12 +64,38 @@ p
     grid-row: span 2;
 }
 
-
 @media screen and (max-width: 1000px)
 {
-    .name-card-span:nth-child(1)
+    .name-tabs
     {
-        grid-row: 1;
+        padding: 0;
+    }
+    
+    .img-pfp
+    {
+        width: 300px;
+    }
+
+    .name-card-span
+    {
+        grid-row: span 0;
+    }
+
+    .name-card-grid
+    {
+    background-color: #5747EA;
+    border-radius: 15px;
+    padding-top: 1rem;
+    }
+
+    .name-tabs
+    {
+        background-color: #1C204B;
+        border-radius: 15px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content: center;      
     }
 }
 
@@ -74,9 +107,10 @@ p
     margin-top: 5.5rem;
 }
 
-.name-tabs:hover
+p:hover
 {
     color: white;
+    font-weight: bold;
 }
 
 .name-card-grid
@@ -184,4 +218,9 @@ p
     background-color: #1C204B;
     border-radius: 15px;
     padding-top: 1rem;
+}
+
+.card-bodytest:hover
+{
+    background-color: #33397A;
 }
